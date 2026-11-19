@@ -31,6 +31,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
       if (saved === 'en' || saved === 'es') {
         setLocaleState(saved);
         document.documentElement.lang = saved;
+        document.title = DICTIONARIES[saved].meta.title;
         return;
       }
 
@@ -38,6 +39,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
       const detected: Locale = browserLang.startsWith('es') ? 'es' : 'en';
       setLocaleState(detected);
       document.documentElement.lang = detected;
+      document.title = DICTIONARIES[detected].meta.title;
     } catch {
       // Fallback to default English
     }
@@ -48,6 +50,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
     try {
       window.localStorage.setItem(STORAGE_KEY, next);
       document.documentElement.lang = next;
+      document.title = DICTIONARIES[next].meta.title;
     } catch {
       // Ignore storage errors
     }
