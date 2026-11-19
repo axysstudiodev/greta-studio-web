@@ -1,7 +1,10 @@
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
-import { Features } from '@/components/Features';
+import { AppShowcase } from '@/components/AppShowcase';
+import { BentoFeatures } from '@/components/BentoFeatures';
+import { UseCases } from '@/components/UseCases';
 import { Pricing } from '@/components/Pricing';
+import { FAQ } from '@/components/FAQ';
 import { DownloadSection } from '@/components/DownloadSection';
 import { Footer } from '@/components/Footer';
 
@@ -11,8 +14,11 @@ export default function HomePage() {
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <Features />
+        <AppShowcase />
+        <BentoFeatures />
+        <UseCases />
         <Pricing />
+        <FAQ />
         <DownloadSection />
       </main>
       <Footer />

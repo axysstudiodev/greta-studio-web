@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Globe, Sparkles } from 'lucide-react';
+import { Globe, Zap } from 'lucide-react';
 import { useI18n } from '@/i18n/I18nProvider';
 
 export const Navbar: React.FC = () => {
@@ -28,14 +28,9 @@ export const Navbar: React.FC = () => {
             className="h-8 w-8 rounded-lg border border-white/10 object-contain shadow-sm"
             priority
           />
-          <div className="flex items-baseline gap-1.5">
-            <span className="text-sm font-bold tracking-tight text-[#F3F4F6]">
-              Greta Studio
-            </span>
-            <span className="hidden rounded-full border border-orange-500/25 bg-orange-500/10 px-1.5 py-0.5 text-[10px] font-semibold tracking-wider text-orange-400 sm:inline-block">
-              v1.6
-            </span>
-          </div>
+          <span className="text-sm font-bold tracking-tight text-[#F3F4F6]">
+            Greta Studio
+          </span>
         </a>
 
         {/* Navigation Links (Desktop) */}
@@ -47,10 +42,22 @@ export const Navbar: React.FC = () => {
             {t.nav.features}
           </a>
           <a
+            href="#use-cases"
+            className="transition-colors duration-150 hover:text-[#F3F4F6]"
+          >
+            {t.nav.useCases}
+          </a>
+          <a
             href="#pricing"
             className="transition-colors duration-150 hover:text-[#F3F4F6]"
           >
             {t.nav.pricing}
+          </a>
+          <a
+            href="#faq"
+            className="transition-colors duration-150 hover:text-[#F3F4F6]"
+          >
+            {t.nav.faq}
           </a>
           <a
             href="#download"
@@ -77,7 +84,7 @@ export const Navbar: React.FC = () => {
             href="#pricing"
             className="inline-flex h-8 items-center gap-1.5 rounded-md bg-gradient-to-b from-orange-500 to-orange-600 px-3.5 text-xs font-semibold text-white shadow-sm shadow-orange-500/25 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.25)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:from-orange-400 hover:to-orange-500 active:scale-[0.97]"
           >
-            <Sparkles className="h-3.5 w-3.5" />
+            <Zap className="h-3.5 w-3.5" />
             <span>{t.nav.buyPro}</span>
           </a>
         </div>

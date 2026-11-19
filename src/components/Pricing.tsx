@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Check, Sparkles, Users, Zap } from 'lucide-react';
+import { Check, Gift, Users, Zap } from 'lucide-react';
 import { useI18n } from '@/i18n/I18nProvider';
 
 export const Pricing: React.FC = () => {
@@ -26,7 +26,7 @@ export const Pricing: React.FC = () => {
           {/* Tier 1: Free Trial */}
           <div className="flex flex-col rounded-2xl border border-[#2A2E39] bg-[#15171C] p-6 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.04)]">
             <div className="flex items-center gap-2 text-xs font-semibold text-[#D1D5DB]">
-              <Zap className="h-4 w-4 text-[#9CA3AF]" />
+              <Gift className="h-4 w-4 text-[#9CA3AF]" />
               <span>{t.pricing.tiers.trial.name}</span>
             </div>
 
@@ -65,7 +65,7 @@ export const Pricing: React.FC = () => {
             </span>
 
             <div className="flex items-center gap-2 text-xs font-semibold text-orange-300">
-              <Sparkles className="h-4 w-4 text-orange-400" />
+              <Zap className="h-4 w-4 text-orange-400" />
               <span>{t.pricing.tiers.pro.name}</span>
             </div>
 
