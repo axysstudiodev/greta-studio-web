@@ -17,7 +17,7 @@ export const BentoFeatures: React.FC = () => {
   const { t } = useI18n();
 
   return (
-    <section id="features" className="border-t border-[#2A2E39]/70 py-16 sm:py-24">
+    <section id="features" className="scroll-mt-16 border-t border-[#2A2E39]/70 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="flex flex-col justify-between gap-4 lg:flex-row lg:items-end">
           <div className="max-w-xl">
@@ -128,7 +128,7 @@ export const BentoFeatures: React.FC = () => {
                   <span className="text-[#9CA3AF]">
                     {t.bento.speed.otherBarLabel}
                   </span>
-                  <span className="tabular-nums text-[#6B7280]">
+                  <span className="tabular-nums text-[#9CA3AF]">
                     {t.bento.speed.otherBarTime}
                   </span>
                 </div>

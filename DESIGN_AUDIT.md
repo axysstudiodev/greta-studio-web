@@ -29,25 +29,25 @@
 ## 🚀 Plan de Trabajo por Fases (Checklist Accionable)
 
 ### 🔴 FASE 1: Accesibilidad WCAG 2.2, Ergonomía Móvil y Navegación
-- [ ] **1.1 Contraste AA (`≥ 4.5:1`):** Elevar `text-[#6B7280]` a `text-[#8E96A4]` / `text-[#9CA3AF]` en todos los textos informativos de `Hero.tsx`, `Pricing.tsx`, `BentoFeatures.tsx` y `Footer.tsx`.
-- [ ] **1.2 Targets Táctiles Mobile-First:** Aumentar altura táctil en móvil (`py-1.5 sm:py-1`, `h-9 sm:h-8`) en los controles del playground de `Hero.tsx` y botones de `Navbar.tsx`.
-- [ ] **1.3 Menú Móvil en `Navbar.tsx`:** Añadir botón de menú en `< md` con panel desplegable animado (`scale(0.98) -> scale(1)`, `180ms cubic-bezier(0.16, 1, 0.3, 1)`), soporte de tecla `Escape` y cierre automático al elegir sección.
-- [ ] **1.4 `scroll-mt-16` en Secciones:** Agregar `scroll-mt-16` en `#features`, `#use-cases`, `#pricing`, `#faq` y `#download` para que el Navbar sticky nunca tape los encabezados.
-- [ ] **1.5 Focus Rings & Reduced Motion:** Estandarizar `focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60` en todos los elementos interactivos y añadir regla `@media (prefers-reduced-motion: reduce)` en `globals.css`.
+- [x] **1.1 Contraste AA (`≥ 4.5:1`):** Elevar `text-[#6B7280]` a `text-[#8E96A4]` / `text-[#9CA3AF]` en todos los textos informativos de `Hero.tsx`, `Pricing.tsx`, `BentoFeatures.tsx` y `Footer.tsx`.
+- [x] **1.2 Targets Táctiles Mobile-First:** Aumentar altura táctil en móvil (`py-1.5 sm:py-1`, `h-9 sm:h-8`) en los controles del playground de `Hero.tsx` y botones de `Navbar.tsx`.
+- [x] **1.3 Menú Móvil en `Navbar.tsx`:** Añadir botón de menú en `< md` con panel desplegable animado (`scale(0.98) -> scale(1)`, `180ms cubic-bezier(0.16, 1, 0.3, 1)`), soporte de tecla `Escape` y cierre automático al elegir sección.
+- [x] **1.4 `scroll-mt-16` en Secciones:** Agregar `scroll-mt-16` en `#features`, `#use-cases`, `#pricing`, `#faq` y `#download` para que el Navbar sticky nunca tape los encabezados.
+- [x] **1.5 Focus Rings & Reduced Motion:** Estandarizar `focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60` en todos los elementos interactivos y añadir regla `@media (prefers-reduced-motion: reduce)` en `globals.css`.
 
 ---
 
 ### 🟡 FASE 2: Craft Visual, Física de Movimiento (`Emil Kowalski`) y Fidelidad Móvil
-- [ ] **2.1 Clamping del Handle del Slider (`Hero.tsx`):** Usar `left: clamp(18px, ${splitPct}%, calc(100% - 18px))` en el botón circular del divisor para que jamás se corte a la mitad al llegar a `0%` o `100%`.
-- [ ] **2.2 Pista Táctil en Móvil (`Hero.tsx`):** Hacer visible un pill compacto `"Arrastra para comparar"` en pantallas móviles para que el usuario descubra de inmediato que el Hero es interactivo.
-- [ ] **2.3 Barra Resumen Móvil en `AppShowcase.tsx`:** Agregar una tira compacta `flex md:hidden` en `AppShowcase` que muestre el **Logo Claro/Oscuro activo** y la **mini-rejilla de 9 puntos cambiando de posición** para usuarios que visitan desde el teléfono.
-- [ ] **2.4 Acordeón Suave en `FAQ.tsx`:** Reemplazar el render condicional brusco por transición CSS Grid (`grid-rows-[0fr]` a `grid-rows-[1fr]` + `opacity`) en `200ms cubic-bezier(0.16, 1, 0.3, 1)`.
-- [ ] **2.5 Jerarquía de Profundidad entre Secciones:** Alternar fondos sutiles (`bg-[#101217]/80`) y halos radiales tenues en `AppShowcase` y `Pricing` para eliminar la monotonía de cajas planas con `border-t`.
+- [x] **2.1 Clamping del Handle del Slider (`Hero.tsx`):** Usar `left: clamp(18px, ${splitPct}%, calc(100% - 18px))` en el botón circular del divisor para que jamás se corte a la mitad al llegar a `0%` o `100%`.
+- [x] **2.2 Pista Táctil en Móvil (`Hero.tsx`):** Hacer visible un pill compacto `"Arrastra para comparar"` en pantallas móviles para que el usuario descubra de inmediato que el Hero es interactivo.
+- [x] **2.3 Barra Resumen Móvil en `AppShowcase.tsx`:** Agregar una tira compacta `flex md:hidden` en `AppShowcase` que muestre el **Logo Claro/Oscuro activo** y la **mini-rejilla de 9 puntos cambiando de posición** para usuarios que visitan desde el teléfono.
+- [x] **2.4 Acordeón Suave en `FAQ.tsx`:** Reemplazar el render condicional brusco por transición CSS Grid (`grid-rows-[0fr]` a `grid-rows-[1fr]` + `opacity`) en `200ms cubic-bezier(0.16, 1, 0.3, 1)`.
+- [x] **2.5 Jerarquía de Profundidad entre Secciones:** Alternar fondos sutiles (`bg-[#101217]/80`) y halos radiales tenues en `AppShowcase` y `Pricing` para eliminar la monotonía de cajas planas con `border-t`.
 
 ---
 
 ### 🟢 FASE 3: Conversión (CRO), SEO Técnico y Redes Sociales
-- [ ] **3.1 Detección Inteligente de SO en `DownloadSection.tsx`:** Detectar en cliente si el visitante usa Windows o macOS y destacar su tarjeta correspondiente con borde naranja suave y badge *"Recomendado para tu equipo"*.
-- [ ] **3.2 Sello de Confianza en `Pricing.tsx`:** Agregar línea de seguridad y entrega inmediata bajo las tarjetas de precios (*"Entrega inmediata por correo · Pago único seguro · Windows y macOS"*).
-- [ ] **3.3 Limpieza de Metadata y `document.title` Bilingüe:** Quitar `"with native Rust speed"` de `layout.tsx` y sincronizar `document.title` en `I18nProvider.tsx` al cambiar entre ES y EN.
-- [ ] **3.4 Open Graph, `robots.ts`, `sitemap.ts` y `not-found.tsx`:** Configurar tarjetas sociales con imagen de preview y crear las rutas estándar de SEO y página 404 con estética Studio Dark.
+- [x] **3.1 Detección Inteligente de SO en `DownloadSection.tsx`:** Detectar en cliente si el visitante usa Windows o macOS y destacar su tarjeta correspondiente con borde naranja suave y badge *"Recomendado para tu equipo"*.
+- [x] **3.2 Sello de Confianza en `Pricing.tsx`:** Agregar línea de seguridad y entrega inmediata bajo las tarjetas de precios (*"Entrega inmediata por correo · Pago único seguro · Windows y macOS"*).
+- [x] **3.3 Limpieza de Metadata y `document.title` Bilingüe:** Quitar `"with native Rust speed"` de `layout.tsx` y sincronizar `document.title` en `I18nProvider.tsx` al cambiar entre ES y EN.
+- [x] **3.4 Open Graph, `robots.ts`, `sitemap.ts` y `not-found.tsx`:** Configurar tarjetas sociales con imagen de preview y crear las rutas estándar de SEO y página 404 con estética Studio Dark.

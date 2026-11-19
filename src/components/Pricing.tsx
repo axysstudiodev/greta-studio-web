@@ -8,7 +8,7 @@ export const Pricing: React.FC = () => {
   const { t } = useI18n();
 
   return (
-    <section id="pricing" className="border-t border-[#2A2E39]/70 py-16 sm:py-24">
+    <section id="pricing" className="scroll-mt-16 border-t border-[#2A2E39]/70 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-[11px] font-bold tracking-widest text-orange-400">
@@ -34,7 +34,7 @@ export const Pricing: React.FC = () => {
               <span className="tabular-nums text-4xl font-extrabold tracking-tight text-[#F3F4F6]">
                 {t.pricing.tiers.trial.price}
               </span>
-              <span className="text-xs text-[#6B7280]">{t.pricing.freeLabel}</span>
+              <span className="text-xs text-[#9CA3AF]">{t.pricing.freeLabel}</span>
             </div>
 
             <p className="mt-3 text-xs leading-relaxed text-[#9CA3AF]">
@@ -52,7 +52,7 @@ export const Pricing: React.FC = () => {
 
             <a
               href="#download"
-              className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg border border-[#2A2E39] bg-[#1E2128] text-xs font-semibold text-[#F3F4F6] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-[#3B4150] hover:bg-[#272B35] active:scale-[0.97]"
+              className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg border border-[#2A2E39] bg-[#1E2128] text-xs font-semibold text-[#F3F4F6] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-[#3B4150] hover:bg-[#272B35] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97]"
             >
               {t.pricing.tiers.trial.cta}
             </a>
@@ -73,7 +73,7 @@ export const Pricing: React.FC = () => {
               <span className="tabular-nums text-4xl font-extrabold tracking-tight text-[#F3F4F6]">
                 {t.pricing.tiers.pro.price}
               </span>
-              <span className="tabular-nums text-sm text-[#6B7280] line-through">
+              <span className="tabular-nums text-sm text-[#8E96A4] line-through">
                 {t.pricing.tiers.pro.originalPrice}
               </span>
               <span className="text-xs text-[#9CA3AF]">{t.pricing.oneTimeLabel}</span>
@@ -94,7 +94,7 @@ export const Pricing: React.FC = () => {
 
             <a
               href="#download"
-              className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 text-xs font-semibold text-white shadow-md shadow-orange-500/25 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.25)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:from-orange-400 hover:to-orange-500 active:scale-[0.97]"
+              className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 text-xs font-semibold text-white shadow-md shadow-orange-500/25 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.25)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:from-orange-400 hover:to-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 active:scale-[0.97]"
             >
               {t.pricing.tiers.pro.cta}
             </a>
@@ -111,7 +111,7 @@ export const Pricing: React.FC = () => {
               <span className="tabular-nums text-4xl font-extrabold tracking-tight text-[#F3F4F6]">
                 {t.pricing.tiers.studio.price}
               </span>
-              <span className="text-xs text-[#6B7280]">{t.pricing.oneTimeLabel}</span>
+              <span className="text-xs text-[#9CA3AF]">{t.pricing.oneTimeLabel}</span>
             </div>
 
             <p className="mt-3 text-xs leading-relaxed text-[#9CA3AF]">
@@ -129,12 +129,16 @@ export const Pricing: React.FC = () => {
 
             <a
               href="#download"
-              className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg border border-[#2A2E39] bg-[#1E2128] text-xs font-semibold text-[#F3F4F6] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-[#3B4150] hover:bg-[#272B35] active:scale-[0.97]"
+              className="mt-8 inline-flex h-10 w-full items-center justify-center rounded-lg border border-[#2A2E39] bg-[#1E2128] text-xs font-semibold text-[#F3F4F6] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-[#3B4150] hover:bg-[#272B35] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97]"
             >
               {t.pricing.tiers.studio.cta}
             </a>
           </div>
         </div>
+
+        <p className="mt-8 text-center text-xs text-[#9CA3AF]">
+          {t.pricing.trustNote}
+        </p>
       </div>
     </section>
   );

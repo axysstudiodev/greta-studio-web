@@ -101,7 +101,7 @@ export const Hero: React.FC = () => {
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <a
               href="#download"
-              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 px-6 text-sm font-semibold text-white shadow-lg shadow-orange-500/25 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.25)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:from-orange-400 hover:to-orange-500 active:scale-[0.97] sm:w-auto"
+              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-b from-orange-500 to-orange-600 px-6 text-sm font-semibold text-white shadow-lg shadow-orange-500/25 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.25)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:from-orange-400 hover:to-orange-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-400 active:scale-[0.97] sm:w-auto"
             >
               <Download className="h-4 w-4" />
               <span>{t.hero.ctaPrimary}</span>
@@ -109,14 +109,14 @@ export const Hero: React.FC = () => {
 
             <a
               href="#pricing"
-              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-[#2A2E39] bg-[#15171C] px-6 text-sm font-semibold text-[#F3F4F6] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-[#3B4150] hover:bg-[#1E2128] active:scale-[0.97] sm:w-auto"
+              className="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg border border-[#2A2E39] bg-[#15171C] px-6 text-sm font-semibold text-[#F3F4F6] shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-[#3B4150] hover:bg-[#1E2128] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97] sm:w-auto"
             >
               <span>{t.hero.ctaSecondary}</span>
               <ArrowRight className="h-4 w-4 text-orange-400" />
             </a>
           </div>
 
-          <p className="mt-4 text-xs text-[#6B7280]">{t.hero.metaNote}</p>
+          <p className="mt-4 text-xs text-[#9CA3AF]">{t.hero.metaNote}</p>
         </div>
 
         {/* Interactive Before / After Studio Playground */}
@@ -135,7 +135,7 @@ export const Hero: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setPreviewMode('signature')}
-                  className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-medium transition-all duration-150 active:scale-[0.97] ${
+                  className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-2 text-[11px] font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97] sm:py-1 ${
                     previewMode === 'signature'
                       ? 'border border-orange-500/30 bg-orange-500/15 text-orange-300'
                       : 'border border-transparent text-[#9CA3AF] hover:text-[#F3F4F6]'
@@ -147,7 +147,7 @@ export const Hero: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setPreviewMode('pattern')}
-                  className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-medium transition-all duration-150 active:scale-[0.97] ${
+                  className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-2 text-[11px] font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97] sm:py-1 ${
                     previewMode === 'pattern'
                       ? 'border border-orange-500/30 bg-orange-500/15 text-orange-300'
                       : 'border border-transparent text-[#9CA3AF] hover:text-[#F3F4F6]'
@@ -159,7 +159,7 @@ export const Hero: React.FC = () => {
                 <button
                   type="button"
                   onClick={() => setPreviewMode('ribbon')}
-                  className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-1 text-[11px] font-medium transition-all duration-150 active:scale-[0.97] ${
+                  className={`inline-flex items-center gap-1.5 rounded-md px-2.5 py-2 text-[11px] font-medium transition-all duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97] sm:py-1 ${
                     previewMode === 'ribbon'
                       ? 'border border-orange-500/30 bg-orange-500/15 text-orange-300'
                       : 'border border-transparent text-[#9CA3AF] hover:text-[#F3F4F6]'
@@ -195,7 +195,7 @@ export const Hero: React.FC = () => {
                       ? sponsorsInputRef.current?.click()
                       : logoInputRef.current?.click()
                   }
-                  className="inline-flex items-center gap-1.5 rounded-md border border-[#2A2E39] bg-[#1E2128] px-2.5 py-1 text-[11px] font-medium text-[#E5E7EB] transition-all duration-150 hover:border-orange-500/40 hover:text-orange-300 active:scale-[0.97]"
+                  className="inline-flex items-center gap-1.5 rounded-md border border-[#2A2E39] bg-[#1E2128] px-2.5 py-2 text-[11px] font-medium text-[#E5E7EB] transition-all duration-150 hover:border-orange-500/40 hover:text-orange-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97] sm:py-1"
                 >
                   <Upload className="h-3 w-3 text-orange-400" />
                   <span>
@@ -211,7 +211,7 @@ export const Hero: React.FC = () => {
                     onClick={handleResetCustom}
                     title={t.hero.resetPreviewBtn}
                     aria-label={t.hero.resetPreviewBtn}
-                    className="inline-flex items-center gap-1 rounded-md border border-[#2A2E39] bg-[#15171C] px-2 py-1 text-[11px] font-medium text-[#9CA3AF] transition-colors hover:border-[#3B4150] hover:text-[#F3F4F6] active:scale-[0.97]"
+                    className="inline-flex items-center gap-1 rounded-md border border-[#2A2E39] bg-[#15171C] px-2.5 py-2 text-[11px] font-medium text-[#9CA3AF] transition-colors hover:border-[#3B4150] hover:text-[#F3F4F6] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-orange-500/60 active:scale-[0.97] sm:px-2 sm:py-1"
                   >
                     <RotateCcw className="h-3 w-3" />
                     <span className="hidden sm:inline">
@@ -312,11 +312,11 @@ export const Hero: React.FC = () => {
               </span>
             </div>
 
-            {/* Vertical Divider Handle */}
+            {/* Vertical Divider Handle (clamped so the 32px handle never clips at 0% / 100%) */}
             <div
               aria-hidden="true"
               className="pointer-events-none absolute inset-y-0 z-20 w-0.5 bg-orange-400/90 shadow-[0_0_12px_rgba(249,115,22,0.8)]"
-              style={{ left: `${splitPct}%` }}
+              style={{ left: `clamp(16px, ${splitPct}%, calc(100% - 16px))` }}
             >
               <div className="absolute top-1/2 left-1/2 flex h-8 w-8 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-orange-300/70 bg-[#0D0E11]/95 text-orange-400 shadow-lg">
                 <MoveHorizontal className="h-4 w-4" />
@@ -334,19 +334,19 @@ export const Hero: React.FC = () => {
               className="absolute inset-0 z-30 h-full w-full cursor-ew-resize opacity-0"
             />
 
-            {/* Top-Center Offline & Drag Hint (keeps bottom clear for Signature, Filename Pill & Ribbon) */}
-            <div className="pointer-events-none absolute top-3.5 left-1/2 z-10 hidden -translate-x-1/2 items-center gap-1.5 rounded-md border border-white/10 bg-[#0D0E11]/80 px-2.5 py-1 text-[10px] font-medium whitespace-nowrap text-[#D1D5DB] backdrop-blur-xs md:inline-flex">
-              <ShieldCheck className="h-3 w-3 text-orange-400" />
-              <span>{t.hero.previewStatOffline}</span>
-              <span className="text-[#4B5563]">·</span>
-              <span className="text-[#9CA3AF]">{t.hero.dragHint}</span>
+            {/* Top-Center Offline & Drag Hint (compact on mobile, full on md+) */}
+            <div className="pointer-events-none absolute top-3.5 left-1/2 z-10 inline-flex -translate-x-1/2 items-center gap-1.5 rounded-md border border-white/10 bg-[#0D0E11]/85 px-2.5 py-1 text-[10px] font-medium whitespace-nowrap text-[#D1D5DB] backdrop-blur-xs">
+              <ShieldCheck className="hidden h-3 w-3 text-orange-400 md:inline-block" />
+              <span className="hidden md:inline">{t.hero.previewStatOffline}</span>
+              <span className="hidden text-[#4B5563] md:inline">·</span>
+              <span className="text-[#D1D5DB] md:text-[#9CA3AF]">{t.hero.dragHint}</span>
             </div>
           </div>
         </div>
 
         {/* Delivery Workflow Strip */}
         <div className="mx-auto mt-10 flex max-w-4xl flex-col items-center justify-between gap-3 border-t border-[#2A2E39]/60 pt-6 sm:flex-row">
-          <span className="text-[10px] font-bold tracking-[0.2em] text-[#6B7280]">
+          <span className="text-[10px] font-bold tracking-[0.2em] text-[#9CA3AF]">
             {t.hero.workflowLabel}
           </span>
           <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-xs font-semibold tracking-wide text-[#9CA3AF]">

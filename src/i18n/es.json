@@ -10,7 +10,9 @@
     "faq": "FAQ",
     "download": "Descargar",
     "buyPro": "Comprar Pro",
-    "langToggleLabel": "Cambiar idioma"
+    "langToggleLabel": "Cambiar idioma",
+    "openMenuLabel": "Abrir menú de navegación",
+    "closeMenuLabel": "Cerrar menú de navegación"
   },
   "hero": {
     "badge": "v1.6.0 · App de Escritorio para Windows y macOS",
@@ -153,6 +155,7 @@
     "popularBadge": "MÁS POPULAR",
     "oneTimeLabel": "pago único",
     "freeLabel": "para siempre",
+    "trustNote": "Entrega inmediata de licencia · Pago único seguro · Windows y macOS",
     "tiers": {
       "trial": {
         "name": "Prueba Gratuita",
@@ -222,10 +225,18 @@
     "windowsBtn": "Descargar para Windows",
     "windowsMeta": "Windows 10 / 11 (64-bit .exe)",
     "macBtn": "Descargar para macOS",
-    "macMeta": "Instalador Universal (.dmg · M1–M4 e Intel)"
+    "macMeta": "Instalador Universal (.dmg · M1–M4 e Intel)",
+    "recommendedBadge": "Recomendado para tu equipo"
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Página no encontrada",
+    "description": "La página que buscas no existe o fue movida.",
+    "backHome": "Volver a Greta Studio"
   },
   "footer": {
-    "tagline": "Creado por Covado / Axys Studio para fotógrafos en activo.",
-    "rights": "© 2026 Greta Studio. Todos los derechos reservados."
+    "tagline": "Creado por Covado para fotógrafos profesionales.",
+    "rights": "© 2026 Greta Studio. Todos los derechos reservados.",
+    "backToTop": "Volver arriba"
   }
 }

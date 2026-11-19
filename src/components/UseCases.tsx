@@ -32,7 +32,7 @@ export const UseCases: React.FC = () => {
   ];
 
   return (
-    <section id="use-cases" className="border-t border-[#2A2E39]/70 py-16 sm:py-24">
+    <section id="use-cases" className="scroll-mt-16 border-t border-[#2A2E39]/70 bg-[#101217]/80 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-12">
           {/* Left Sticky Editorial Column */}
