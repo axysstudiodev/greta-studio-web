@@ -1,0 +1,123 @@
+{
+  "meta": {
+    "title": "Greta Studio — Fast Batch Watermarking & Branding for Photographers",
+    "description": "Protect, sign, and brand thousands of photos in seconds with native Rust speed. Built for Windows and macOS photographers."
+  },
+  "nav": {
+    "features": "Features",
+    "pricing": "Pricing",
+    "download": "Download",
+    "buyPro": "Get Pro",
+    "langToggleLabel": "Switch language"
+  },
+  "hero": {
+    "badge": "v1.6.0 · Native Rust Engine for Windows & macOS",
+    "titleStart": "Protect & brand thousands of photos in ",
+    "titleAccent": "seconds.",
+    "subtitle": "Built for event, sports, and wedding photographers. Smart auto-contrast signatures, anti-theft proofing patterns, and sponsor ribbons—running 100% offline on your machine.",
+    "ctaPrimary": "Download Free Trial",
+    "ctaSecondary": "Get Greta Pro — $29",
+    "metaNote": "No subscription · Free 5-photo batch trial · macOS Universal & Windows 64-bit",
+    "previewWindowTitle": "Greta Studio v1.6.0 — Batch Studio",
+    "previewBadgePro": "PRO ENGINE",
+    "previewModeSignature": "Signature",
+    "previewModePattern": "Pattern",
+    "previewModeRibbon": "Sponsor Ribbon",
+    "previewStatSpeed": "1,000+ photos / min",
+    "previewStatOffline": "100% Local & Offline"
+  },
+  "features": {
+    "eyebrow": "ENGINEERED FOR PHOTOGRAPHERS",
+    "title": "Everything you need to deliver protected galleries fast",
+    "subtitle": "Zero cloud uploads, zero browser lag. Native multi-core Rust processing with a 60 FPS live studio canvas.",
+    "items": {
+      "signature": {
+        "title": "Auto-Contrast Smart Signatures",
+        "description": "Upload your light and dark logos once. Greta reads corner luminance on every photo and picks the crispest contrast automatically."
+      },
+      "pattern": {
+        "title": "Anti-Theft Proofing Patterns",
+        "description": "Diagonal tiled watermarks with subtle contrast halos and optional filename ID stamps so clients can pick proofs without cropping."
+      },
+      "ribbon": {
+        "title": "Event Sponsor Ribbons",
+        "description": "Add up to 6 sponsor logos in a clean top or bottom bar for marathons, tournaments, and corporate coverage."
+      },
+      "geometry": {
+        "title": "Shortest-Edge & Split Orientations",
+        "description": "Logos scale proportionally across horizontal and vertical shots automatically, with optional custom overrides per orientation."
+      },
+      "rust": {
+        "title": "Parallel Rust + Rayon Core",
+        "description": "Process full weddings or sports tournaments across all CPU cores with Lanczos3 sharpness and zero quality loss."
+      },
+      "offline": {
+        "title": "Offline-First Hybrid Licensing",
+        "description": "Shoot in remote venues with confidence. Cryptographic Ed25519 verification works offline for 30 days between check-ins."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "SIMPLE, HONEST PRICING",
+    "title": "Pay once. Own your workflow.",
+    "subtitle": "No monthly subscriptions. Try Greta Studio free for as long as you like, then unlock unlimited batches with a one-time license.",
+    "popularBadge": "MOST POPULAR",
+    "oneTimeLabel": "one-time",
+    "freeLabel": "forever",
+    "tiers": {
+      "trial": {
+        "name": "Free Trial",
+        "price": "$0",
+        "description": "Test the full studio interface and export speed on your own photos.",
+        "cta": "Download Free",
+        "features": [
+          "Up to 5 photos per batch export",
+          "60 FPS live preview canvas",
+          "Signature, Pattern & Sponsor Ribbon modes",
+          "No credit card or account required"
+        ]
+      },
+      "pro": {
+        "name": "Greta Studio Pro",
+        "price": "$29",
+        "originalPrice": "$39",
+        "description": "Lifetime license for independent photographers working across desktop and laptop.",
+        "cta": "Buy Pro License — $29",
+        "features": [
+          "Unlimited photos per batch export",
+          "2 active devices included (PC + Mac)",
+          "Full 100% Master & 2048px Web profiles",
+          "All v1.x updates included free"
+        ]
+      },
+      "studio": {
+        "name": "Studio Pack",
+        "price": "$69",
+        "description": "Built for photography agencies, multi-shooter teams, and live event crews.",
+        "cta": "Buy Studio Pack — $69",
+        "features": [
+          "Everything in Greta Studio Pro",
+          "5 active devices per license key",
+          "Portable .greta preset pack sharing",
+          "Priority support & v1.x updates"
+        ]
+      }
+    }
+  },
+  "download": {
+    "eyebrow": "READY IN SECONDS",
+    "title": "Download Greta Studio v1.6.0",
+    "subtitle": "Install natively on Windows or Apple Silicon / Intel Macs. Signed installers served directly from GitHub Releases.",
+    "windowsBtn": "Download for Windows",
+    "windowsMeta": "Windows 10 / 11 (64-bit .exe)",
+    "macBtn": "Download for macOS",
+    "macMeta": "Universal Binary (.dmg · M1–M4 & Intel)",
+    "releasesLink": "View all releases & checksums"
+  },
+  "footer": {
+    "tagline": "Crafted by Covado / Axys Studio for working photographers.",
+    "rights": "© 2026 Greta Studio. All rights reserved.",
+    "releases": "Releases",
+    "support": "Support"
+  }
+}
