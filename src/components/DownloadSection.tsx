@@ -1,11 +1,8 @@
 'use client';
 
 import React from 'react';
-import { ArrowUpRight, Download, Laptop, Monitor } from 'lucide-react';
+import { Download, Laptop, Monitor } from 'lucide-react';
 import { useI18n } from '@/i18n/I18nProvider';
-
-const RELEASES_URL =
-  'https://github.com/axysstudiodev/greta-studio-releases/releases/latest';
 
 export const DownloadSection: React.FC = () => {
   const { t } = useI18n();
@@ -26,9 +23,7 @@ export const DownloadSection: React.FC = () => {
 
           <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
             <a
-              href={RELEASES_URL}
-              target="_blank"
-              rel="noreferrer"
+              href="/api/download?platform=windows"
               className="group flex items-center justify-between rounded-xl border border-[#2A2E39] bg-[#1E2128] p-4 text-left shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-orange-500/40 hover:bg-[#242832] active:scale-[0.98]"
             >
               <div className="flex items-center gap-3">
@@ -48,9 +43,7 @@ export const DownloadSection: React.FC = () => {
             </a>
 
             <a
-              href={RELEASES_URL}
-              target="_blank"
-              rel="noreferrer"
+              href="/api/download?platform=mac"
               className="group flex items-center justify-between rounded-xl border border-[#2A2E39] bg-[#1E2128] p-4 text-left shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] transition-all duration-150 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-orange-500/40 hover:bg-[#242832] active:scale-[0.98]"
             >
               <div className="flex items-center gap-3">
@@ -69,16 +62,6 @@ export const DownloadSection: React.FC = () => {
               <Download className="h-4 w-4 text-[#9CA3AF] transition-colors group-hover:text-orange-400" />
             </a>
           </div>
-
-          <a
-            href={RELEASES_URL}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-6 inline-flex items-center gap-1 text-xs font-medium text-[#9CA3AF] transition-colors hover:text-orange-400"
-          >
-            <span>{t.download.releasesLink}</span>
-            <ArrowUpRight className="h-3.5 w-3.5" />
-          </a>
         </div>
       </div>
     </section>

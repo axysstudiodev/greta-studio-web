@@ -24,18 +24,7 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-5 text-xs text-[#9CA3AF]">
-          <a
-            href="https://github.com/axysstudiodev/greta-studio-releases/releases"
-            target="_blank"
-            rel="noreferrer"
-            className="transition-colors hover:text-[#F3F4F6]"
-          >
-            {t.footer.releases}
-          </a>
-          <span className="text-[#2A2E39]">·</span>
-          <span className="text-[11px] text-[#6B7280]">{t.footer.rights}</span>
-        </div>
+        <span className="text-[11px] text-[#6B7280]">{t.footer.rights}</span>
       </div>
     </footer>
   );

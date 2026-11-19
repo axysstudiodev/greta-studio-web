@@ -1,66 +1,155 @@
 {
   "meta": {
     "title": "Greta Studio — Marca de Agua y Firma por Lotes para Fotógrafos",
-    "description": "Protege, firma y entrega miles de fotos en segundos con motor nativo en Rust. Disponible para Windows y macOS."
+    "description": "Protege, firma y entrega miles de fotos en segundos. Disponible para Windows y macOS."
   },
   "nav": {
     "features": "Funciones",
+    "useCases": "Casos de Uso",
     "pricing": "Precios",
+    "faq": "FAQ",
     "download": "Descargar",
     "buyPro": "Comprar Pro",
     "langToggleLabel": "Cambiar idioma"
   },
   "hero": {
-    "badge": "v1.6.0 · Motor Nativo en Rust para Windows y macOS",
+    "badge": "v1.6.0 · App de Escritorio para Windows y macOS",
     "titleStart": "Protege y firma miles de fotos en ",
     "titleAccent": "segundos.",
-    "subtitle": "Diseñado para fotógrafos de eventos, deportes y bodas. Firmas con auto-contraste inteligente, patrones antifraude y cintillos de patrocinadores funcionando 100% offline.",
+    "subtitle": "Diseñado para fotógrafos de eventos, deportes y bodas. Firmas con auto-contraste inteligente, marcas de agua antifraude y cintillos de patrocinadores funcionando 100% offline.",
     "ctaPrimary": "Descargar Prueba Gratis",
     "ctaSecondary": "Obtener Greta Pro — $29",
-    "metaNote": "Sin suscripciones · Prueba gratis de 5 fotos por lote · macOS Universal y Windows 64-bit",
-    "previewWindowTitle": "Greta Studio v1.6.0 — Estudio por Lotes",
-    "previewBadgePro": "MOTOR PRO",
+    "metaNote": "Pago único · Prueba gratis de 5 fotos por lote · macOS y Windows",
+    "previewWindowTitle": "Greta Studio v1.6.0 — Estudio en Vivo",
     "previewModeSignature": "Firma",
-    "previewModePattern": "Patrón",
-    "previewModeRibbon": "Cintillo",
-    "previewStatSpeed": "1,000+ fotos / min",
-    "previewStatOffline": "100% Local y Offline"
+    "previewModePattern": "Marca de Agua",
+    "previewModeRibbon": "Patrocinadores",
+    "previewStatSpeed": "Cientos de fotos en segundos",
+    "previewStatOffline": "100% Local y Offline",
+    "beforeLabel": "ORIGINAL",
+    "afterLabel": "GRETA PRO",
+    "dragHint": "Arrastra para comparar",
+    "tryLogoBtn": "Probar tu logo",
+    "trySponsorsBtn": "Tus logos (máx. 6)",
+    "resetPreviewBtn": "Restaurar",
+    "workflowLabel": "EL ÚLTIMO PASO ANTES DE ENTREGAR",
+    "workflowDragFolders": "Arrastra carpetas completas",
+    "workflowFormats": "JPG · PNG · WEBP",
+    "workflowQuality": "Calidad Original 100%"
   },
-  "features": {
-    "eyebrow": "INGENIERÍA PARA FOTÓGRAFOS",
-    "title": "Todo lo que necesitas para entregar galerías protegidas",
-    "subtitle": "Cero subidas a la nube, cero lag del navegador. Procesamiento nativo multinúcleo en Rust con vista previa en vivo a 60 FPS.",
+  "showcase": {
+    "eyebrow": "GRETA STUDIO POR DENTRO",
+    "title": "De fotos sin tu toque personal a galería con tu sello en 3 pasos.",
+    "subtitle": "Carga tus fotos, ajusta la posición y contraste de tu sello en un clic y exporta todo el lote en segundos.",
+    "steps": {
+      "drop": "1. Suelta tus fotos",
+      "style": "2. Ajusta la posición",
+      "export": "3. Exporta el lote"
+    },
+    "app": {
+      "modesLabel": "MODOS",
+      "modeSignature": "Firma",
+      "modeWatermark": "Marca de Agua",
+      "modeRibbon": "Sponsors",
+      "presetsLabel": "PRESETS (1)",
+      "savePresetBtn": "+ Guardar Nuevo",
+      "presetActive": "Watermark",
+      "exportLabel": "EXPORTACIÓN",
+      "qualityWeb": "Web",
+      "qualityOriginal": "Original",
+      "subfolderValue": "Subcarpeta (/Greta_Out)",
+      "exportBtn": "Exportar ({count})",
+      "proBadge": "Greta Studio Pro",
+      "noPhoto": "Sin foto seleccionada",
+      "opacityBadge": "Opacidad: 85%",
+      "dropTitle": "Arrastra y suelta tus fotos aquí para previsualizar y firmar",
+      "dropSubtitle": "Soporta JPG, JPEG, PNG, WEBP y TIFF · Sin separar carpetas",
+      "selectPhotosBtn": "Seleccionar Fotos",
+      "guidesBtn": "Mostrar Guías",
+      "fitBtn": "Ajustar",
+      "batchQueueLabel": "COLA DE LOTE",
+      "allCount": "Todas",
+      "addPhotosBtn": "+ Agregar Fotos / Carpeta",
+      "hideQueueBtn": "Ocultar Cola",
+      "logosLabel": "ARCHIVOS DE LOGO (PNG / SVG)",
+      "dualContrast": "Doble Contraste",
+      "lightLogo": "Logo Claro",
+      "darkLogo": "Logo Oscuro",
+      "geometryLabel": "GEOMETRÍA DE FIRMA",
+      "anchorTitle": "Anclaje de 9 Puntos",
+      "anchorBottomLeft": "Abajo Izquierda",
+      "anchorBottomRight": "Abajo Derecha",
+      "anchorSubtitle": "Relativo al Lado Corto",
+      "scaleLabel": "Tamaño de Firma",
+      "opacityLabel": "Opacidad de Firma",
+      "marginXLabel": "Margen X",
+      "marginYLabel": "Margen Y",
+      "autoSwitchLabel": "Auto-Cambiar Logo Claro/O...",
+      "exportingTitle": "Exportando Lote...",
+      "exportedDone": "Lote exportado"
+    }
+  },
+  "bento": {
+    "eyebrow": "¿POR QUÉ GRETA STUDIO?",
+    "title": "Marca tus fotos en segundos, sin perder calidad.",
+    "subtitle": "Olvídate de esperar herramientas lentas o subir archivos a la nube. Todo corre directo en tu computadora.",
+    "autoContrast": {
+      "badge": "CONTRASTE INTELIGENTE",
+      "title": "Firmas con Auto-Contraste",
+      "description": "Sube tus logos claro y oscuro una sola vez. Greta analiza la luz de la esquina en cada foto y elige el contraste más nítido automáticamente.",
+      "lightZoneLabel": "Cielo claro → Logo oscuro",
+      "darkZoneLabel": "Sombra profunda → Logo claro"
+    },
+    "speed": {
+      "badge": "VELOCIDAD EXTREMA",
+      "title": "Exporta Eventos Completos en Segundos",
+      "description": "Procesa bodas o torneos completos aprovechando toda la potencia de tu computadora, con nitidez impecable.",
+      "gretaBarLabel": "Greta Studio (Todos los núcleos)",
+      "gretaBarTime": "Segundos",
+      "otherBarLabel": "Herramientas Web / Nube",
+      "otherBarTime": "Minutos"
+    },
+    "proofing": {
+      "badge": "PROTECCIÓN ANTIFRAUDE",
+      "title": "Marca de Agua + ID de Toma",
+      "description": "Protege la foto completa contra recortes y muestra el nombre del archivo para que tu cliente te diga exactamente cuáles quiere."
+    },
+    "ribbon": {
+      "badge": "LISTO PARA EVENTOS",
+      "title": "Hasta 6 Logos de Patrocinadores",
+      "description": "Cintillos superiores o inferiores con espaciado automático para maratones, torneos y activaciones corporativas."
+    },
+    "geometry": {
+      "badge": "ESCALA ADAPTATIVA",
+      "title": "Consistente en Horizontal y Vertical",
+      "description": "Tus logos se ajustan proporcionalmente en cada toma, con opción de personalizar por orientación y funcionamiento confiable sin internet."
+    }
+  },
+  "useCases": {
+    "eyebrow": "HECHO PARA CADA DISPARO",
+    "title": "¿Quién usa Greta Studio?",
     "items": {
-      "signature": {
-        "title": "Firmas con Auto-Contraste",
-        "description": "Sube tus logos claro y oscuro una sola vez. Greta analiza la luminancia de cada esquina y elige el mejor contraste automáticamente."
+      "sports": {
+        "tag": "DEPORTES Y MARATONES",
+        "title": "Entrega 2,000+ fotos antes que la competencia",
+        "description": "Marca pruebas de atletas con malla diagonal, ID de archivo y cintillo de patrocinadores desde la misma pista, incluso sin Wi-Fi."
       },
-      "pattern": {
-        "title": "Patrones de Protección Antifraude",
-        "description": "Malla diagonal con halo sutil y sello opcional del nombre de archivo para que tus clientes elijan pruebas sin poder recortarlas."
+      "weddings": {
+        "tag": "BODAS Y EVENTOS",
+        "title": "Protege tus adelantos sin arruinar la estética",
+        "description": "La firma con auto-contraste se mantiene sutil en recepciones nocturnas y nítida en retratos luminosos de exterior."
       },
-      "ribbon": {
-        "title": "Cintillo de Patrocinadores",
-        "description": "Agrega hasta 6 logos de marcas patrocinadoras en una barra superior o inferior limpia para maratones, torneos y eventos."
-      },
-      "geometry": {
-        "title": "Escala Inteligente Horizontal y Vertical",
-        "description": "Los logos se adaptan proporcionalmente sin importar la orientación de la foto, con ajustes independientes si los necesitas."
-      },
-      "rust": {
-        "title": "Motor Paralelo Rust + Rayon",
-        "description": "Exporta bodas o torneos completos usando todos los núcleos de tu procesador con nitidez Lanczos3 y cero pérdida de calidad."
-      },
-      "offline": {
-        "title": "Licencia Híbrida Offline-First",
-        "description": "Trabaja en locaciones sin señal con tranquilidad. Validación criptográfica Ed25519 con pase offline renovable de 30 días."
+      "studios": {
+        "tag": "ESTUDIOS Y AGENCIAS",
+        "title": "Mantén a todo tu equipo alineado con .greta",
+        "description": "Exporta tus logos, márgenes y perfiles exactos en un archivo .greta portable y compártelo hasta en 5 equipos."
       }
     }
   },
   "pricing": {
-    "eyebrow": "PRECIOS CLAROS Y JUSTOS",
+    "eyebrow": "SIN SUSCRIPCIONES",
     "title": "Paga una vez. Es tuyo.",
-    "subtitle": "Sin rentas mensuales. Prueba Greta Studio gratis todo el tiempo que quieras y desbloquea lotes ilimitados con un pago único.",
+    "subtitle": "Prueba Greta Studio gratis todo el tiempo que quieras y desbloquea lotes ilimitados con un único pago.",
     "popularBadge": "MÁS POPULAR",
     "oneTimeLabel": "pago único",
     "freeLabel": "para siempre",
@@ -72,8 +161,8 @@
         "cta": "Descargar Gratis",
         "features": [
           "Hasta 5 fotos por lote exportado",
-          "Vista previa en vivo a 60 FPS",
-          "Modos Firma, Patrón y Cintillo",
+          "Vista previa instantánea en vivo",
+          "Modos Firma, Marca de Agua y Patrocinadores",
           "Sin tarjeta ni registro obligatorio"
         ]
       },
@@ -104,20 +193,39 @@
       }
     }
   },
+  "faq": {
+    "eyebrow": "DUDAS FRECUENTES",
+    "title": "Todo lo que necesitas saber antes de comprar",
+    "items": [
+      {
+        "question": "¿De verdad es pago único sin suscripciones mensuales?",
+        "answer": "Sí. Pagas una sola vez y conservas Greta Studio v1.x para siempre, incluyendo todas las mejoras y actualizaciones de la serie v1.x."
+      },
+      {
+        "question": "¿Funciona sin internet en eventos o locaciones remotas?",
+        "answer": "100%. Todo el procesamiento ocurre directamente en tu computadora. Tus fotos nunca salen de tu equipo y la licencia Pro funciona sin conexión hasta 30 días entre renovaciones automáticas."
+      },
+      {
+        "question": "¿Qué pasa si cambio de laptop o formateo mi computadora?",
+        "answer": "Puedes desactivar un equipo directamente desde la ventana de Licencia dentro de Greta Studio con un clic, liberando ese espacio al instante para tu equipo nuevo."
+      },
+      {
+        "question": "¿Es compatible con Mac Apple Silicon (M1–M4) y Windows 11?",
+        "answer": "Sí. El instalador de macOS funciona de forma nativa en Apple Silicon e Intel, y el de Windows es compatible con Windows 10 y 11 de 64 bits."
+      }
+    ]
+  },
   "download": {
     "eyebrow": "LISTO EN SEGUNDOS",
-    "title": "Descarga Greta Studio v1.6.0",
-    "subtitle": "Instálalo de forma nativa en Windows o Mac (Apple Silicon e Intel). Instaladores firmados servidos desde GitHub Releases.",
+    "title": "Descarga Greta Studio",
+    "subtitle": "Instálalo de forma nativa en Windows o Mac. La descarga comienza automáticamente con un clic.",
     "windowsBtn": "Descargar para Windows",
     "windowsMeta": "Windows 10 / 11 (64-bit .exe)",
     "macBtn": "Descargar para macOS",
-    "macMeta": "Binario Universal (.dmg · M1–M4 e Intel)",
-    "releasesLink": "Ver todas las versiones y notas"
+    "macMeta": "Instalador Universal (.dmg · M1–M4 e Intel)"
   },
   "footer": {
     "tagline": "Creado por Covado / Axys Studio para fotógrafos en activo.",
-    "rights": "© 2026 Greta Studio. Todos los derechos reservados.",
-    "releases": "Versiones",
-    "support": "Soporte"
+    "rights": "© 2026 Greta Studio. Todos los derechos reservados."
   }
 }
